@@ -1,5 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
+annotations:
+  argocd.argoproj.io/sync-wave: '{{ .Values.argocd.syncwave.configmap }}'
 metadata:
   name: '{{ .Chart.Name }}-html'
 immutable: false
