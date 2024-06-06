@@ -36,7 +36,7 @@ spec:
               path: {{ .Values.readiness.path }}
               port: {{ .Values.containers.containerPort }}
               scheme: HTTP
-            initialDelaySeconds: {{ .Values.probes.readiness..initialDelaySeconds }}
+            initialDelaySeconds: {{ .Values.probes.readiness.initialDelaySeconds }}
             timeoutSeconds: {{ .Values.probes.readiness.timeoutSeconds }}
             periodSeconds: {{ .Values.probes.readiness.periodSeconds }}
             successThreshold: {{ .Values.probes.readiness.successThreshold }}
