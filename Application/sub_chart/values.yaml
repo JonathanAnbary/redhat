@@ -3,7 +3,7 @@ github:
   token: empty-pass
   url: <https://api.github.com/repos/jonathananbary/redhat/issues>
 
-test: Healthy
+test: Fail
 
 deploy1: 
   ReplicaNumber: 1
