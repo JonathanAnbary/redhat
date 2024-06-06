@@ -33,7 +33,7 @@ spec:
               mountPath: {{ .Values.voluem.mount.path }} # this will mount the html.index file to it application location
           readinessProbe:
             httpGet:
-              path: {{ .Values.readiness.path }}
+              path: {{ .Values.probes.readiness.path }}
               port: {{ .Values.containers.containerPort }}
               scheme: HTTP
             initialDelaySeconds: {{ .Values.probes.readiness.initialDelaySeconds }}
